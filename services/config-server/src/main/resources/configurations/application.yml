@@ -1,0 +1,10 @@
+soring:
+  cloud:
+    config:
+      override-system-properties: false
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/ # URL de votre serveur Eureka
+  instance:
+    hostname: localhost # Nom d'hôte de votre instance, souvent optionnel

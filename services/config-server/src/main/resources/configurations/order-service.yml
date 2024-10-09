@@ -1,0 +1,18 @@
+server:
+  port: 8083
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/order
+    username: alibou
+    password: alibou
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: create
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+  application:
+    config:
+      customer-url: http://localhost:8090/api/v1/costomer
+      product-url: http://localhost:8091/api/v1/product
+      paiment-url: http://localhost:8092/api/v1/paiment
